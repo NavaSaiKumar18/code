@@ -1,0 +1,50 @@
+import 'package:flutter/material.dart';
+
+class Columscreen extends StatefulWidget {
+  const Columscreen({super.key});
+
+  @override
+  State<Columscreen> createState() => _ColumscreenState();
+}
+
+class _ColumscreenState extends State<Columscreen> {
+  @override
+  Widget build(BuildContext context) {
+   return Scaffold(
+    appBar: AppBar(
+      centerTitle: true,
+      title: Text("Column screen"),
+      backgroundColor: Colors.amber,
+    ),
+    body: Container(
+      height: double.infinity,
+      width: double.infinity,
+      color: Colors.red,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            height: 200,
+            width: 150,
+            color: Colors.black,
+          ),
+          SizedBox(height: 20,),  Container(
+            height: 200,
+            width: 150,
+            color: Colors.green,
+          ),
+           SizedBox(height: 20,), 
+            Container(
+            height: 200,
+            width: 150,
+            color: Colors.blue,
+          ),
+         
+        ],
+      ),
+    ),
+
+   );
+  }
+}
